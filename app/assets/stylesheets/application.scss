@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: #de1000;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand:hover {
+    color: #333333;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #333333;
+}
+
+.active{
+  color: #de1000;
+}
+
+.title{
+  color: #de1000;
+}
+
+.konten{
+  padding-top: 50px;
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+.button-act {
+  padding-top: 5px;
+}
+
+.button-act ul li{
+  display: inline-block;
+}
+
+/*----------------------
+pagination
+------------------------*/
+.paginate{
+  text-align: center;
+}
+.pagination {
+    font-size: 12px;
+}
+
+.pagination > * {
+    margin-right: 0.1em;
+    padding: 0.3em 0.4em;
+}
+
+.pagination a:hover {
+    background: #1ded00 none repeat scroll 0 0;
+}
+
+.pagination a:active {
+    text-shadow: none;
+}
+
+.pagination .current {
+    background: #1ded00 none repeat scroll 0 0;
+    color: white;
+}
+
+.pagination .disabled {
+    color: #C0C0C0;
+}
+
+
+/*----------------------
+pencarian
+------------------------*/
+.cari{
+  padding-top: 10px;
+  size :50px;
+}

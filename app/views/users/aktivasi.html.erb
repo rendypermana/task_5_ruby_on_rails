@@ -1,0 +1,5 @@
+<% @user.each do |user| %>
+<ul>
+<li><%= link_to "Activate Your Account", "http://localhost:3000/sessions/#{@activation_token}/edit", method: 'GET' %> akun si <b><%= user.username %></b></li>
+</ul>
+<% end %>

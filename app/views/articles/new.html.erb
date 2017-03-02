@@ -1,0 +1,39 @@
+
+<h1>New Article</h1>
+<%= form_for @articles do |f| %>
+
+	<div class="form-group">
+		<%= f.label :title %>
+		<%= f.text_field :title, :class => "form-control"  %>
+		<div class="alert-danger">
+		<%= @articles.errors[:title].first unless @articles.errors[:title].blank? %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :content %>
+		<%= f.text_area :content, rows: 10, :class => "form-control" %>
+		<div class="alert-danger">
+		<%= @articles.errors[:content].first unless @articles.errors[:content].blank? %>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :status %>
+		<div class="checkbox">
+			<label>
+			<%= f.radio_button :status, "active" %>
+			<%= label :article_status, 'active' %>
+			</label>
+		</div>
+		<div class="checkbox">
+			<label>
+			<%= f.radio_button :status, "off", :checked => true %>
+			<%= label :article_status, 'off' %>
+			</label>
+		</div>
+	</div>
+
+	<%= f.submit :submit, :class => "btn btn-primary" %>
+
+<% end %>
